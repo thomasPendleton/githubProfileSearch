@@ -38,7 +38,7 @@ function createUserCard(user) {
     </div>
     <div class="user-info">
       <h2>${user.name}</h2>
-      <p>${user.bio}</p>
+      <p>${user.bio ? user.bio : 'No user bio'}</p>
       <ul>
         <li>${user.followers}<strong>Followers</strong></li>
         <li>${user.following}<strong>Following</strong></li>
